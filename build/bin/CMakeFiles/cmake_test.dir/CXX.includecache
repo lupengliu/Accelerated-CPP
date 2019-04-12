@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/../inc/foo.h
+
+/mnt/hgfs/share/cmake_test/src/foo.cc
+iostream
+-
+foo.h
+/mnt/hgfs/share/cmake_test/src/foo.h
+
+/mnt/hgfs/share/cmake_test/src/test.cc
+iostream
+-
+foo.h
+-
+
